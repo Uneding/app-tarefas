@@ -10,4 +10,5 @@ public class ApplicationDbContext : IdentityDbContext
     {
     }
     public DbSet<Tipo> Tipos { get; set; } = null!;
+    public DbSet<Tarefa> Tarefas { get; set; } = null!;
 }
