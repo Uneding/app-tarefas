@@ -23,16 +23,16 @@
             @Html.DisplayFor(model => model.Descricao)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DataCriacao)
+            @Model.DataCriacao.ToString("dd/MM/yyyy HH:mm")
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DataCriacao)
+            @Model.DataCriacao.ToString("dd/MM/yyyy HH:mm")
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DataConclusao)
+            @Model.DataConclusao?.ToString("dd/MM/yyyy HH:mm")
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DataConclusao)
+            @Model.DataConclusao?.ToString("dd/MM/yyyy HH:mm")
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Tipo)
